@@ -1,4 +1,4 @@
-# SOAP_API-sample-C-Sharp
+# SOAP API-sample-C#
 
 Ejemplos de integración del SOAP API para clientes C#.NET.
 
