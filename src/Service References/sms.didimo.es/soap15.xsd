@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="https://sms.didimo.es/wcf/CreateSendRequest/MessageSend" elementFormDefault="qualified" targetNamespace="https://sms.didimo.es/wcf/CreateSendRequest/MessageSend" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfMessageSend">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MessageSend" nillable="true" type="tns:MessageSend" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMessageSend" nillable="true" type="tns:ArrayOfMessageSend" />
+  <xs:complexType name="MessageSend">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsUnicode" nillable="true" type="xs:string" />
+      <xs:element name="Mobile" nillable="true" type="xs:string" />
+      <xs:element name="Text" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MessageSend" nillable="true" type="tns:MessageSend" />
+</xs:schema>

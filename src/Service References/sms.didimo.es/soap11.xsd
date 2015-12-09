@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="https://sms.didimo.es/wcf" elementFormDefault="qualified" targetNamespace="https://sms.didimo.es/wcf" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd2" namespace="https://sms.didimo.es/wcf/PingRequest" />
+  <xs:import schemaLocation="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd3" namespace="https://sms.didimo.es/wcf/PingResult" />
+  <xs:import schemaLocation="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd5" namespace="https://sms.didimo.es/wcf/GetMessageIdRequest" />
+  <xs:import schemaLocation="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd6" namespace="https://sms.didimo.es/wcf/GetMessageIdResult" />
+  <xs:import schemaLocation="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd7" namespace="https://sms.didimo.es/wcf/CreateSendRequest" />
+  <xs:import schemaLocation="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd9" namespace="https://sms.didimo.es/wcf/CreateSendResult" />
+  <xs:import schemaLocation="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd11" namespace="https://sms.didimo.es/wcf/CreateMessageRequest" />
+  <xs:import schemaLocation="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd12" namespace="https://sms.didimo.es/wcf/CreateMessageResult" />
+  <xs:import schemaLocation="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd13" namespace="https://sms.didimo.es/wcf/GetMessageStatusRequest" />
+  <xs:import schemaLocation="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd14" namespace="https://sms.didimo.es/wcf/GetMessageStatusResult" />
+  <xs:import schemaLocation="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd15" namespace="https://sms.didimo.es/wcf/GetCreditsRequest" />
+  <xs:import schemaLocation="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd16" namespace="https://sms.didimo.es/wcf/GetCreditsResult" />
+  <xs:import schemaLocation="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd17" namespace="https://sms.didimo.es/wcf/GetCertifyFileRequest" />
+  <xs:import schemaLocation="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd18" namespace="http://schemas.microsoft.com/Message" />
+  <xs:element name="Ping">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="https://sms.didimo.es/wcf/PingRequest" minOccurs="0" name="inputdata" nillable="true" type="q1:PingRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="https://sms.didimo.es/wcf/PingResult" minOccurs="0" name="PingResult" nillable="true" type="q2:PingResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMessageId">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="https://sms.didimo.es/wcf/GetMessageIdRequest" minOccurs="0" name="inputdata" nillable="true" type="q3:GetMessageIdRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMessageIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="https://sms.didimo.es/wcf/GetMessageIdResult" minOccurs="0" name="GetMessageIdResult" nillable="true" type="q4:GetMessageIdResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateSend">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="https://sms.didimo.es/wcf/CreateSendRequest" minOccurs="0" name="inputdata" nillable="true" type="q5:CreateSendRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateSendResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="https://sms.didimo.es/wcf/CreateSendResult" minOccurs="0" name="CreateSendResult" nillable="true" type="q6:CreateSendResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateMessage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="https://sms.didimo.es/wcf/CreateMessageRequest" minOccurs="0" name="inputdata" nillable="true" type="q7:CreateMessageRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateMessageResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="https://sms.didimo.es/wcf/CreateMessageResult" minOccurs="0" name="CreateMessageResult" nillable="true" type="q8:CreateMessageResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMessageStatus">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="https://sms.didimo.es/wcf/GetMessageStatusRequest" minOccurs="0" name="inputdata" nillable="true" type="q9:GetMessageStatusRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetMessageStatusResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="https://sms.didimo.es/wcf/GetMessageStatusResult" minOccurs="0" name="GetMessageStatusResult" nillable="true" type="q10:GetMessageStatusResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCredits">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="https://sms.didimo.es/wcf/GetCreditsRequest" minOccurs="0" name="inputdata" nillable="true" type="q11:GetCreditsRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCreditsResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="https://sms.didimo.es/wcf/GetCreditsResult" minOccurs="0" name="GetCreditsResult" nillable="true" type="q12:GetCreditsResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateCertifiedSend">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="https://sms.didimo.es/wcf/CreateSendRequest" minOccurs="0" name="inputdata" nillable="true" type="q13:CreateSendRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateCertifiedSendResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="https://sms.didimo.es/wcf/CreateSendResult" minOccurs="0" name="CreateCertifiedSendResult" nillable="true" type="q14:CreateSendResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateCertifiedMessage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="https://sms.didimo.es/wcf/CreateMessageRequest" minOccurs="0" name="inputdata" nillable="true" type="q15:CreateMessageRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateCertifiedMessageResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="https://sms.didimo.es/wcf/CreateMessageResult" minOccurs="0" name="CreateCertifiedMessageResult" nillable="true" type="q16:CreateMessageResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCertifyFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="https://sms.didimo.es/wcf/GetCertifyFileRequest" minOccurs="0" name="inputdata" nillable="true" type="q17:GetCertifyFileRequest" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCertifyFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.microsoft.com/Message" name="GetCertifyFileResult" type="q18:StreamBody" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

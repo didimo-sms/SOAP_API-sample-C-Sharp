@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="https://sms.didimo.es/wcf/CreateSendResult/MessageSendResult" elementFormDefault="qualified" targetNamespace="https://sms.didimo.es/wcf/CreateSendResult/MessageSendResult" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd4" namespace="https://sms.didimo.es/wcf/BaseResult" />
+  <xs:complexType name="ArrayOfMessageSendResult">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MessageSendResult" nillable="true" type="tns:MessageSendResult" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMessageSendResult" nillable="true" type="tns:ArrayOfMessageSendResult" />
+  <xs:complexType name="MessageSendResult">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="https://sms.didimo.es/wcf/BaseResult" base="q1:BaseResult">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Id" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Mobile" nillable="true" type="xs:string" />
+          <xs:element minOccurs="0" name="Text" nillable="true" type="xs:string" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="MessageSendResult" nillable="true" type="tns:MessageSendResult" />
+</xs:schema>

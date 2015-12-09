@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="https://sms.didimo.es/wcf/GetMessageIdRequest" elementFormDefault="qualified" targetNamespace="https://sms.didimo.es/wcf/GetMessageIdRequest" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="GetMessageIdRequest">
+    <xs:sequence>
+      <xs:element name="UserName" nillable="true" type="xs:string" />
+      <xs:element name="Password" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="GetMessageIdRequest" nillable="true" type="tns:GetMessageIdRequest" />
+</xs:schema>

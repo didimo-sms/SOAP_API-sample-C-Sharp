@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="https://sms.didimo.es/wcf" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="https://sms.didimo.es/wcf" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="https://sms.didimo.es/wcf/Imports">
+      <xsd:import schemaLocation="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd0" namespace="https://sms.didimo.es/wcf" />
+      <xsd:import schemaLocation="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd2" namespace="https://sms.didimo.es/wcf/PingRequest" />
+      <xsd:import schemaLocation="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd3" namespace="https://sms.didimo.es/wcf/PingResult" />
+      <xsd:import schemaLocation="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd4" namespace="https://sms.didimo.es/wcf/BaseResult" />
+      <xsd:import schemaLocation="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd5" namespace="https://sms.didimo.es/wcf/GetMessageIdRequest" />
+      <xsd:import schemaLocation="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd6" namespace="https://sms.didimo.es/wcf/GetMessageIdResult" />
+      <xsd:import schemaLocation="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd7" namespace="https://sms.didimo.es/wcf/CreateSendRequest" />
+      <xsd:import schemaLocation="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd8" namespace="https://sms.didimo.es/wcf/CreateSendRequest/MessageSend" />
+      <xsd:import schemaLocation="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd9" namespace="https://sms.didimo.es/wcf/CreateSendResult" />
+      <xsd:import schemaLocation="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd10" namespace="https://sms.didimo.es/wcf/CreateSendResult/MessageSendResult" />
+      <xsd:import schemaLocation="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd11" namespace="https://sms.didimo.es/wcf/CreateMessageRequest" />
+      <xsd:import schemaLocation="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd12" namespace="https://sms.didimo.es/wcf/CreateMessageResult" />
+      <xsd:import schemaLocation="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd13" namespace="https://sms.didimo.es/wcf/GetMessageStatusRequest" />
+      <xsd:import schemaLocation="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd14" namespace="https://sms.didimo.es/wcf/GetMessageStatusResult" />
+      <xsd:import schemaLocation="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd15" namespace="https://sms.didimo.es/wcf/GetCreditsRequest" />
+      <xsd:import schemaLocation="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd16" namespace="https://sms.didimo.es/wcf/GetCreditsResult" />
+      <xsd:import schemaLocation="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd17" namespace="https://sms.didimo.es/wcf/GetCertifyFileRequest" />
+      <xsd:import schemaLocation="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd18" namespace="http://schemas.microsoft.com/Message" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="wcfService_Ping_InputMessage">
+    <wsdl:part name="parameters" element="tns:Ping" />
+  </wsdl:message>
+  <wsdl:message name="wcfService_Ping_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PingResponse" />
+  </wsdl:message>
+  <wsdl:message name="wcfService_GetMessageId_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMessageId" />
+  </wsdl:message>
+  <wsdl:message name="wcfService_GetMessageId_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMessageIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="wcfService_CreateSend_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateSend" />
+  </wsdl:message>
+  <wsdl:message name="wcfService_CreateSend_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateSendResponse" />
+  </wsdl:message>
+  <wsdl:message name="wcfService_CreateMessage_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateMessage" />
+  </wsdl:message>
+  <wsdl:message name="wcfService_CreateMessage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="wcfService_GetMessageStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMessageStatus" />
+  </wsdl:message>
+  <wsdl:message name="wcfService_GetMessageStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMessageStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="wcfService_GetCredits_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCredits" />
+  </wsdl:message>
+  <wsdl:message name="wcfService_GetCredits_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCreditsResponse" />
+  </wsdl:message>
+  <wsdl:message name="wcfService_CreateCertifiedSend_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateCertifiedSend" />
+  </wsdl:message>
+  <wsdl:message name="wcfService_CreateCertifiedSend_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateCertifiedSendResponse" />
+  </wsdl:message>
+  <wsdl:message name="wcfService_CreateCertifiedMessage_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateCertifiedMessage" />
+  </wsdl:message>
+  <wsdl:message name="wcfService_CreateCertifiedMessage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateCertifiedMessageResponse" />
+  </wsdl:message>
+  <wsdl:message name="wcfService_GetCertifyFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCertifyFile" />
+  </wsdl:message>
+  <wsdl:message name="wcfService_GetCertifyFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCertifyFileResponse" />
+  </wsdl:message>
+  <wsdl:portType name="wcfService">
+    <wsdl:operation name="Ping">
+      <wsdl:input wsaw:Action="https://sms.didimo.es/wcf/wcfService/Ping" message="tns:wcfService_Ping_InputMessage" />
+      <wsdl:output wsaw:Action="https://sms.didimo.es/wcf/wcfService/PingResponse" message="tns:wcfService_Ping_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMessageId">
+      <wsdl:input wsaw:Action="https://sms.didimo.es/wcf/wcfService/GetMessageId" message="tns:wcfService_GetMessageId_InputMessage" />
+      <wsdl:output wsaw:Action="https://sms.didimo.es/wcf/wcfService/GetMessageIdResponse" message="tns:wcfService_GetMessageId_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateSend">
+      <wsdl:input wsaw:Action="https://sms.didimo.es/wcf/wcfService/CreateSend" message="tns:wcfService_CreateSend_InputMessage" />
+      <wsdl:output wsaw:Action="https://sms.didimo.es/wcf/wcfService/CreateSendResponse" message="tns:wcfService_CreateSend_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateMessage">
+      <wsdl:input wsaw:Action="https://sms.didimo.es/wcf/wcfService/CreateMessage" message="tns:wcfService_CreateMessage_InputMessage" />
+      <wsdl:output wsaw:Action="https://sms.didimo.es/wcf/wcfService/CreateMessageResponse" message="tns:wcfService_CreateMessage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMessageStatus">
+      <wsdl:input wsaw:Action="https://sms.didimo.es/wcf/wcfService/GetMessageStatus" message="tns:wcfService_GetMessageStatus_InputMessage" />
+      <wsdl:output wsaw:Action="https://sms.didimo.es/wcf/wcfService/GetMessageStatusResponse" message="tns:wcfService_GetMessageStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCredits">
+      <wsdl:input wsaw:Action="https://sms.didimo.es/wcf/wcfService/GetCredits" message="tns:wcfService_GetCredits_InputMessage" />
+      <wsdl:output wsaw:Action="https://sms.didimo.es/wcf/wcfService/GetCreditsResponse" message="tns:wcfService_GetCredits_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateCertifiedSend">
+      <wsdl:input wsaw:Action="https://sms.didimo.es/wcf/wcfService/CreateCertifiedSend" message="tns:wcfService_CreateCertifiedSend_InputMessage" />
+      <wsdl:output wsaw:Action="https://sms.didimo.es/wcf/wcfService/CreateCertifiedSendResponse" message="tns:wcfService_CreateCertifiedSend_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateCertifiedMessage">
+      <wsdl:input wsaw:Action="https://sms.didimo.es/wcf/wcfService/CreateCertifiedMessage" message="tns:wcfService_CreateCertifiedMessage_InputMessage" />
+      <wsdl:output wsaw:Action="https://sms.didimo.es/wcf/wcfService/CreateCertifiedMessageResponse" message="tns:wcfService_CreateCertifiedMessage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCertifyFile">
+      <wsdl:input wsaw:Action="https://sms.didimo.es/wcf/wcfService/GetCertifyFile" message="tns:wcfService_GetCertifyFile_InputMessage" />
+      <wsdl:output wsaw:Action="https://sms.didimo.es/wcf/wcfService/GetCertifyFileResponse" message="tns:wcfService_GetCertifyFile_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

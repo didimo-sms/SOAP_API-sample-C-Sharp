@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4C7440D0-1DA6-4CFE-81BB-CD852A91A262}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SOAP_API</RootNamespace>
+    <AssemblyName>SOAP API</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\sms.didimo.es\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="SoapClient.cs" />
+    <Compile Include="SoapClientAsync.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Service References\sms.didimo.es\soap.wsdl" />
+    <None Include="Service References\sms.didimo.es\soap.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\sms.didimo.es\soap1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\sms.didimo.es\soap10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\sms.didimo.es\soap11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\sms.didimo.es\soap12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\sms.didimo.es\soap13.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\sms.didimo.es\soap14.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\sms.didimo.es\soap15.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\sms.didimo.es\soap16.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\sms.didimo.es\soap17.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\sms.didimo.es\soap18.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\sms.didimo.es\soap2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\sms.didimo.es\soap3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\sms.didimo.es\soap4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\sms.didimo.es\soap5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\sms.didimo.es\soap6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\sms.didimo.es\soap7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\sms.didimo.es\soap8.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\sms.didimo.es\soap9.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\sms.didimo.es\SOAP_API.sms.didimo.es.CreateMessageResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\sms.didimo.es\SOAP_API.sms.didimo.es.CreateSendResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\sms.didimo.es\SOAP_API.sms.didimo.es.GetCreditsResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\sms.didimo.es\SOAP_API.sms.didimo.es.GetMessageIdResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\sms.didimo.es\SOAP_API.sms.didimo.es.GetMessageStatusResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\sms.didimo.es\SOAP_API.sms.didimo.es.PingResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\sms.didimo.es\WCFService.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\sms.didimo.es\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\sms.didimo.es\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\sms.didimo.es\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\sms.didimo.es\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

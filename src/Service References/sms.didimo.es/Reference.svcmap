@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="430e6df5-2971-436c-9a8a-e05196358e9b" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="https://sms.didimo.es/wcf/Service.svc/soap?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="soap.xsd" MetadataType="Schema" ID="71d14a03-a078-4408-9752-5caced64e66c" SourceId="1" SourceUrl="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd11" />
+    <MetadataFile FileName="soap1.xsd" MetadataType="Schema" ID="5bbd411d-51f8-4571-a61b-3550628003b4" SourceId="1" SourceUrl="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd14" />
+    <MetadataFile FileName="soap2.xsd" MetadataType="Schema" ID="0d68a942-d025-47b9-b126-92eac77b2818" SourceId="1" SourceUrl="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd15" />
+    <MetadataFile FileName="soap3.xsd" MetadataType="Schema" ID="efeca77d-3a5a-43a5-847a-8cc6d7c7783a" SourceId="1" SourceUrl="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd12" />
+    <MetadataFile FileName="soap4.xsd" MetadataType="Schema" ID="1a463705-4ac9-4535-887d-5bac577c60b5" SourceId="1" SourceUrl="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd4" />
+    <MetadataFile FileName="soap5.xsd" MetadataType="Schema" ID="6a3f4269-603b-4da4-9d90-9f8b9ef335d1" SourceId="1" SourceUrl="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd9" />
+    <MetadataFile FileName="soap6.xsd" MetadataType="Schema" ID="6525fc3f-4116-4a83-b51b-b51949bf2efd" SourceId="1" SourceUrl="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd16" />
+    <MetadataFile FileName="soap7.xsd" MetadataType="Schema" ID="5bbce2d3-43e3-4a22-aa78-3a12c5d0c0f7" SourceId="1" SourceUrl="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd10" />
+    <MetadataFile FileName="soap8.xsd" MetadataType="Schema" ID="12b77a66-61f6-4f22-bea3-6d9cb3aef725" SourceId="1" SourceUrl="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd3" />
+    <MetadataFile FileName="soap9.xsd" MetadataType="Schema" ID="d9566f38-2d67-41c5-ba41-1c8b4ac9ddd2" SourceId="1" SourceUrl="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd13" />
+    <MetadataFile FileName="soap10.xsd" MetadataType="Schema" ID="98de7b63-68d1-460f-b00f-9feaad111cdd" SourceId="1" SourceUrl="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd17" />
+    <MetadataFile FileName="WCFService.wsdl" MetadataType="Wsdl" ID="2c00550a-db33-43dd-8fc9-522b46ad5212" SourceId="1" SourceUrl="https://sms.didimo.es/wcf/Service.svc/soap?wsdl" />
+    <MetadataFile FileName="soap11.xsd" MetadataType="Schema" ID="d79218c6-ad17-4696-8c0b-debb5aa9a234" SourceId="1" SourceUrl="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd0" />
+    <MetadataFile FileName="soap12.xsd" MetadataType="Schema" ID="8ea8d096-0eca-4460-a5d1-5d069b3e5ac5" SourceId="1" SourceUrl="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd7" />
+    <MetadataFile FileName="soap.wsdl" MetadataType="Wsdl" ID="6604db4c-b577-490b-b10f-73f8688f2875" SourceId="1" SourceUrl="https://sms.didimo.es/wcf/Service.svc/soap?wsdl=wsdl0" />
+    <MetadataFile FileName="soap13.xsd" MetadataType="Schema" ID="4090fb53-3fac-4890-81aa-ac520d462e14" SourceId="1" SourceUrl="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd6" />
+    <MetadataFile FileName="soap14.xsd" MetadataType="Schema" ID="fabc6dc5-613c-4880-93fd-6e37760214d6" SourceId="1" SourceUrl="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd1" />
+    <MetadataFile FileName="soap15.xsd" MetadataType="Schema" ID="0f5c15e5-0881-46d3-a598-78b4f1b86435" SourceId="1" SourceUrl="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd8" />
+    <MetadataFile FileName="soap16.xsd" MetadataType="Schema" ID="7003c31a-5ee6-4f1c-8b34-7e92a0a6f3a7" SourceId="1" SourceUrl="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd5" />
+    <MetadataFile FileName="soap17.xsd" MetadataType="Schema" ID="44d4bbe2-0a9b-4ddf-b1e6-0944e299ee04" SourceId="1" SourceUrl="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd18" />
+    <MetadataFile FileName="soap18.xsd" MetadataType="Schema" ID="94316988-73f9-4660-a2f4-bfbc9f92759b" SourceId="1" SourceUrl="https://sms.didimo.es/wcf/Service.svc/soap?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
